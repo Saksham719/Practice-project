@@ -27,9 +27,9 @@
 		infinite: true,
 		arrows: false,
 		autoplay: true,
-		slidesToShow: 6,
-		slidesToScroll: 6,
-		autoplaySpeed: 6000,
+		slidesToShow: 5,
+		slidesToScroll: 2,
+		autoplaySpeed: 600,
 		responsive: [
 		    {
 		      breakpoint: 1024,
@@ -115,7 +115,7 @@
 		dots: true,
 		arrows:false,
 		autoplay: true,
-		autoplaySpeed: 6000,
+		autoplaySpeed: 600,
 		responsive: [
 		    {
 		      breakpoint: 1024,
@@ -192,5 +192,9 @@
             myShuffle.filter(input.value);
         }
     });
-
+	function navigateToSection(sectionId) {
+		document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+	}
+	
 })(jQuery);
+ 

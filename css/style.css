@@ -20,6 +20,9 @@ body {
   color: #6F8BA4;
   font-weight: 400;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Exo", sans-serif;
@@ -465,7 +468,7 @@ a:focus {
   position: relative;
   overflow: hidden;
   background: #fff;
-  background: url("../images/bg/slider-bg-1.jpg") no-repeat;
+  background: url("../images/bg/rsz_bg5\ \(1\).jpg ") no-repeat;
   background-size: cover;
   min-height: 550px;
 }
@@ -819,7 +822,7 @@ a:focus {
 }
 
 .cta {
-  background: url("../images/bg/bg-4.jpg") no-repeat 50% 50%;
+  background: url("") no-repeat 50% 50%;
   background-size: cover;
   position: relative;
 }
@@ -844,6 +847,7 @@ a:focus {
 
 .cta-section {
   margin-bottom: -80px;
+ 
 }
 
 .cta-2 {

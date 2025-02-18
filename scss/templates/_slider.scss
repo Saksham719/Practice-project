@@ -1,4 +1,4 @@
-.banner{
+ .banner{
   position: relative;
   overflow: hidden;
   background: $light;
@@ -39,15 +39,6 @@
   height:5px;
   background: $secondary-color;
 }
-
-
-
-
-
-
-
-
-
 
 
 @include mobile{
