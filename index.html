@@ -459,8 +459,10 @@
         <div class="side-image">
             <img src="images/side-image.jpg.jpg" alt="Professional Team">
             <div class="overlay">
-                <h2>Join Our Network</h2>
-                <p>Let's build meaningful connections</p>
+                <div>
+                    <h2>Join Our Network</h2>
+                    <p>Let's build meaningful connections</p>
+                </div>
             </div>
         </div>
 
@@ -513,9 +515,10 @@
                     <input type="text" required>
                     <label>Company:</label>
                     <input type="text" required>
+                    <button class="btn back-btn" onclick="goBack('question1')">&laquo; Back</button>
+
                     <button type="submit" class="btn submit-btn">Submit</button>
                 </form>
-                <button class="btn back-btn" onclick="goBack('question1')">&laquo; Back</button>
             </div>
 
             <!-- Form B -->
@@ -528,9 +531,11 @@
                     <input type="text" required>
                     <label>Contact:</label>
                     <input type="tel" required>
+                    <button  class="btn back-btn" onclick="goBack('question2')">&laquo; Back</button>
+
                     <button type="submit" class="btn submit-btn">Submit</button>
+
                 </form>
-                <button class="btn back-btn" onclick="goBack('question2')">&laquo; Back</button>
             </div>
 
             <!-- Form C -->
@@ -543,9 +548,10 @@
                     <input type="text" required>
                     <label>Contact:</label>
                     <input type="tel" required>
+                    <button class="btn back-btn" onclick="goBack('question3')">&laquo; Back</button>
+
                     <button type="submit" class="btn submit-btn">Submit</button>
                 </form>
-                <button class="btn back-btn" onclick="goBack('question3')">&laquo; Back</button>
             </div>
 
             <!-- Thank You Message -->
@@ -562,7 +568,6 @@
 #dynamic-form-section {
     width: 100%;
     min-height: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     background: #f4f7f9;
@@ -572,26 +577,24 @@
 /* Container */
 #dynamic-form-section .container {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
     background: white;
     border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, );
 }
 
 
 /* Side Image */
 .side-image {
-    width: 50%;
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
 .side-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 /* Image Overlay */
@@ -600,29 +603,18 @@
     bottom: 20px;
     left: 20px;
     width: 90%;
-    color: #ffffff; /* Pure white text */
-    background: rgba(0, 0, 0, 5); /* Darker background for contrast */
+    color:rgb(255, 253, 253); /* Pure white text */
+    background: rgba(24, 16, 62, 0.95); /* Darker background for contrast */
     padding: 20px;
-    border-radius: 8px;
     text-align: left;
 }
 
 /* Overlay Title */
 .overlay h2 {
     font-size: 34px;
-    font-weight: bold; /* Make it stand out more */
     color: #ffffff; /* Pure white */
-    text-shadow: 3px 3px 6px rgba(0, 0,0,0); /* Stronger shadow for better readability */
-    margin-bottom: 10px;
 }
 
-/* Overlay Paragraph */
-.overlay p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #ffffff; /* Ensure text is pure white */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Light shadow to enhance visibility */
-}
 
 /* Form Box */
 .form-box {
@@ -655,7 +647,7 @@
     position: absolute;
     width: 0%;
     height: 5px;
-    background: #4A90E2;
+    background: #0b223d;
     transition: width 0.3s ease-in-out;
 }
 
@@ -674,7 +666,7 @@
 }
 
 .step-indicator.active {
-    background: #4A90E2;
+    background: #201142;
     color: white;
 }
 
@@ -722,13 +714,13 @@
 
 .back-btn{
     margin-top: 10%;
-    background-color: #f1f1f1;
     color: black;
 }
 
 
 .submit-btn {
-	gap: 50%;
+    margin-left: 19%;
+	gap: 10%;
 	margin-top: 10%;
     background-color: #e12454;
     color: white;
